@@ -1,0 +1,160 @@
+<div class="container mt-4 fade-in">
+  <!-- Header con animación -->
+  <header class="text-center py-5 mb-5">
+    <div class="mb-4 position-relative d-inline-block">
+      <img
+        src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=200&h=200&q=80"
+        alt="Catálogo de películas"
+        class="rounded-circle shadow"
+        width="200"
+        height="200"
+        style="border: 5px solid rgba(255,255,255,0.2); transition: transform 0.5s ease;"
+        onmouseover="this.style.transform='scale(1.05)'"
+        onmouseout="this.style.transform='scale(1)'">
+      <div class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary p-3">
+        <i class="bi bi-film" style="font-size: 1.5rem;"></i>
+      </div>
+    </div>
+    <h1 class="display-4 fw-bold mb-3 text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Catálogo de películas</h1>
+    <p class="lead fs-4 text-white">Tu colección personal de cine</p>
+  </header>
+
+  <!-- Descripción con efecto de tarjeta mejorado -->
+  <div class="row justify-content-center mb-5">
+    <div class="col-md-10">
+      <div class="card shadow p-5 border-0 rounded-4" style="background-color: rgba(20, 20, 20, 0.85) !important;">
+        <div class="text-center">
+          <p class="lead fs-4 mb-4 text-white">
+            Bienvenido al catálogo de películas. Aquí encontrarás reseñas
+            breves, sinopsis y toda la información esencial de tus cintas
+            favoritas.
+          </p>
+          <p class="fs-5 text-white">
+            <i class="bi bi-film me-2"></i>
+            Explora, <i class="bi bi-heart-fill text-danger mx-1"></i> tus favoritas,
+            y disfruta del séptimo arte.
+          </p>
+
+          <!-- Botones para navegar con efectos hover -->
+          <div class="mt-5 d-flex justify-content-center gap-3">
+            <a routerLink="/movies" class="btn btn-primary btn-lg px-4 py-3">
+              Ver catálogo
+              <i class="bi bi-arrow-right-short ms-2"></i>
+            </a>
+            <a routerLink="/add" class="btn btn-success btn-lg px-4 py-3">
+              Agregar película
+              <i class="bi bi-plus-circle ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Características con tarjetas mejoradas -->
+  <div class="row mb-5 text-center">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 rounded-4 overflow-hidden" style="background-color: rgba(20, 20, 20, 0.85) !important;">
+        <div class="card-body p-4">
+          <div class="p-3 mb-3 rounded-circle d-inline-flex justify-content-center align-items-center"
+               style="background-color: rgba(52, 152, 219, 0.3); width: 80px; height: 80px;">
+            <i class="bi bi-collection-play text-primary" style="font-size: 2.5rem;"></i>
+          </div>
+          <h3 class="h4 mt-3 fw-bold text-white">Organiza tu colección</h3>
+          <p class="text-white-50">Mantén un registro de todas tus películas favoritas en un solo lugar, con toda la información que necesitas.</p>
+        </div>
+        <div class="card-footer bg-transparent border-0 pb-4">
+          <a routerLink="/movies" class="btn btn-sm btn-primary">Explorar catálogo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 rounded-4 overflow-hidden" style="background-color: rgba(20, 20, 20, 0.85) !important;">
+        <div class="card-body p-4">
+          <div class="p-3 mb-3 rounded-circle d-inline-flex justify-content-center align-items-center"
+               style="background-color: rgba(46, 204, 113, 0.3); width: 80px; height: 80px;">
+            <i class="bi bi-pencil-square text-success" style="font-size: 2.5rem;"></i>
+          </div>
+          <h3 class="h4 mt-3 fw-bold text-white">Edita fácilmente</h3>
+          <p class="text-white-50">Actualiza la información de tus películas cuando lo necesites, con una interfaz intuitiva y sencilla.</p>
+        </div>
+        <div class="card-footer bg-transparent border-0 pb-4">
+          <a routerLink="/add" class="btn btn-sm btn-success">Agregar película</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 rounded-4 overflow-hidden" style="background-color: rgba(20, 20, 20, 0.85) !important;">
+        <div class="card-body p-4">
+          <div class="p-3 mb-3 rounded-circle d-inline-flex justify-content-center align-items-center"
+               style="background-color: rgba(243, 156, 18, 0.3); width: 80px; height: 80px;">
+            <i class="bi bi-search text-warning" style="font-size: 2.5rem;"></i>
+          </div>
+          <h3 class="h4 mt-3 fw-bold text-white">Encuentra rápidamente</h3>
+          <p class="text-white-50">Accede a los detalles de cualquier película en tu catálogo con una navegación fluida y rápida.</p>
+        </div>
+        <div class="card-footer bg-transparent border-0 pb-4">
+          <a routerLink="/movies" class="btn btn-sm btn-warning text-dark">Ver películas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de servicios en la nube -->
+  <div class="card p-4 mb-5" style="background-color: rgba(20, 20, 20, 0.85) !important;">
+    <h2 class="text-center text-white mb-4">Servicios en la nube integrados</h2>
+    
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-0" style="background-color: rgba(40, 40, 40, 0.85) !important;">
+          <div class="card-body text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Cloudinary" class="mb-3" style="width: 80px; height: 80px;">
+            <h4 class="text-white">Cloudinary</h4>
+            <p class="text-white-50">Almacenamiento de imágenes optimizado para web</p>
+            <a href="https://cloudinary.com" target="_blank" class="btn btn-outline-light">Visitar <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100 border-0" style="background-color: rgba(40, 40, 40, 0.85) !important;">
+          <div class="card-body text-center">
+            <img src="https://www.svgrepo.com/show/331488/mongodb.svg" alt="MongoDB Atlas" class="mb-3" style="width: 80px; height: 80px;">
+            <h4 class="text-white">MongoDB Atlas</h4>
+            <p class="text-white-50">Base de datos NoSQL en la nube</p>
+            <a href="https://www.mongodb.com/cloud/atlas" target="_blank" class="btn btn-outline-light">Visitar <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100 border-0" style="background-color: rgba(40, 40, 40, 0.85) !important;">
+          <div class="card-body text-center">
+            <img src="https://railway.app/brand/logo-light.svg" alt="Railway" class="mb-3" style="width: 80px; height: 80px;">
+            <h4 class="text-white">Railway</h4>
+            <p class="text-white-50">Plataforma de despliegue de aplicaciones</p>
+            <a href="https://railway.app" target="_blank" class="btn btn-outline-light">Visitar <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer con estilo mejorado -->
+  <footer class="py-4 mt-5 text-center">
+    <div class="card border-0 rounded-4 p-4" style="background-color: rgba(20, 20, 20, 0.85) !important;">
+      <p class="mb-1 text-white">
+        <strong class="text-white">Materia:</strong>
+        Conceptualización de entornos de desarrollo de aplicaciones y servicios
+      </p>
+      <p class="mb-1 text-white"><strong class="text-white">Alumno:</strong> Héctor Armando Salazar Andrade</p>
+      <p class="mb-1 text-white"><strong class="text-white">Código de alumno:</strong> 221968676</p>
+      <p class="mb-0 text-white">
+        <strong class="text-white">Correo de contacto:</strong>
+        <a href="mailto:armando.salazar.andrade@gmail.com" class="text-decoration-none text-primary">
+          armando.salazar.andrade&#64;gmail.com
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
